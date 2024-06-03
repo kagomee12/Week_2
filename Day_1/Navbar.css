@@ -12,6 +12,9 @@ html, body {
     padding: 1rem; 
     color: white;
 }
+.wholemyproject{
+    width: 100%;
+}
 nav {
     background-color: #372523; 
     width: 100%; 
@@ -24,7 +27,7 @@ nav {
     display: flex;
     align-items: center; 
     height: 64px; 
-    width: 50%;
+    width: 100%;
 }
 .navitem{
     display: flex; 
@@ -321,6 +324,13 @@ justify-content: space-between;/*untuk masing2 objek dempet kiri kanan margin*/
     font-size: small;
     width: 48%;
 }
+.content {
+    width: 80%; 
+    height: max-content; 
+    display: block; 
+    padding: 5px; 
+    margin: auto;
+}
 
 .containerhead {
     width: 100%;
@@ -351,4 +361,191 @@ justify-content: space-between;/*untuk masing2 objek dempet kiri kanan margin*/
 }
 .pitblog {
     width: 320px;
+}
+.btn-contatme {
+    display: flex; 
+    justify-content: end; 
+    width: 50%; 
+    align-items: center;
+}
+.navigasi_item_phone img{
+    width: 15%;
+    display: none;
+}
+.conatinernavphone {
+    display: none;
+}
+.navphone {
+    display: none;
+}
+.conutama {
+    width: 100%; display: flex; 
+    justify-content: center; 
+}
+.menuphone {
+    display: flex;
+
+}
+#menuphonebar{
+    width: 100%;
+    background-color: gray;
+    display: none;
+    flex-direction: column;
+    position: sticky;
+    top: 70px;
+
+}
+.containerhunt {
+    height: max-content; 
+    width: 80%; 
+    background-color: azure; 
+    margin: auto; 
+    margin-top: 100px; 
+    display: flex;
+    margin-bottom: 100px; 
+    border-radius: 15px;
+}
+.perkenalan {
+    width: 59.9%;
+}
+.itemumenuphonebar {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+.itemumenuphone{
+    font-size: 14pt;
+    text-decoration: none;
+    color: white;
+    align-content: center;
+}
+.itemumenuphonebar:hover {
+    background-color: aquamarine;
+}
+.barphone{
+    list-style: none;
+    width: 100%;
+}
+.barphone a{
+    padding: 15px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 12pt;
+    width: 100%;
+}
+.containerhutao{
+    width: 39.9%; 
+    padding: auto;
+}
+.divham {
+    display: none;
+}
+.biodatagambar {
+    margin-top: 50px; 
+    display: flex; 
+    justify-content: center;
+    background-color: rgb(92, 92, 92); 
+    background-size: cover; 
+    width: max-content;
+    padding: auto;
+}
+.downcv{
+    width: 100%;
+    display: flex;
+}
+.gambarhutao{
+    width: 180pt;
+}
+@media only screen and (max-width: 750px) {
+    .navigasi_item_phone img{
+        width: 15%;
+        display: flex;
+    }
+    .divham {
+        display: flex; 
+        flex-direction: row; 
+        width: 100%;
+    }
+    .conatinernavphone {
+        display: flex ;
+        width: 500%;
+    }
+    .navphone {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0px 15px;
+    }
+    .containernav {
+        display: none;
+    }
+    .navitem {
+        display: none;
+    }
+    .btn-contatme {
+        display: none;
+    }
+    .navigasi_item {
+        display: none;
+    }
+    .btncontact {
+        display: none;
+    }
+    .containerprojectdata {
+        width: 100%;
+    }
+
+    .formproject {
+        width: 100%;
+    }
+    .borderpost {
+        width: 45%;
+        gap: 10%;
+    }
+    .containerhunt {
+        flex-direction: column;
+        width: 80%;
+        margin: auto;
+    }
+    .perkenalan {
+        width: 100%;
+        text-align: justify;
+        height: fit-content;
+        padding: 0;
+    }
+    .perkenalan p{
+        text-align: justify;
+        max-width: 100%;
+        display: block;
+        padding: 15px;
+        margin-top: -20px;
+        margin-bottom: 30px;
+    }
+    .contact1 {
+        padding-left: 15px;
+    }
+    .biodata{
+        justify-content: center;
+        display: flex;
+    }
+    .gambarhutao{
+        width: 40%;
+        height: auto;
+        display: block;
+
+    }
+    .biodatagambar{
+        width: 100%;
+        background-color: white;
+    }
+    .containerhutao{
+        width: 100%;
+    }
+    .downcv{
+        margin-bottom: 15px;
+    }
 }
