@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="Navbar.css">
+</head>
+
+<body>
+    <nav>
+        <div class="containernav" style="width: 100%;">
+            <ul class="navitem">
+                <li class="navigasi_item"><img src="./logo/sticker_10.webp" alt="" height="50px"></li>
+                <li class="navigasi_item"><a href="./index.html" style="text-decoration: none;"
+                        class="navigasi_item_1">Home</a>
+                </li>
+                <li class="navigasi_item"><a href="./myproject.html" style="text-decoration: none;"
+                        class="navigasi_item_1">My
+                        Project</a></li>
+                        <li class="navigasi_item"><a href="" class="navigasi_item_1">Testimonials</a></li>
+            </ul>
+        </div>
+        <div class="btn-contatme">
+            <a href="contact_me.html" class="btncontact">Contact Me</a>
+        </div>
+        <div class="divham">
+            <div class="conatinernavphone">
+                <ul class="navphone">
+                    <li class="navigasi_item_phone"><img src="./logo/sticker_10.webp" alt=""></li>
+                </ul>
+            </div>
+            <div class="conatinernavphone">
+                <ul class="navphone">
+                    <div style="text-align: end; justify-content: right; width: 100%;"><li><a href="" onclick="buttonham(event)"><i class="fa-solid fa-bars" style="color: black;"></i></a></li></div>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="menuphonebar" >
+        <div class="itemumenuphonebar"><a href="index.html" class="itemumenuphone">Home</a></div>
+        <div class="itemumenuphonebar"><a href="myproject.html" class="itemumenuphone">My Project</a></div>
+        <div class="itemumenuphonebar"><a href="contact_me.html" class="itemumenuphone">Contact Me</a></div>
+    </div>
+    <div class="wholemyproject">
+        <h1 class="titlemyproject">ADD MY PROJECT</h1>
+        <div class="conutama">
+            <form action="" onsubmit="inputblog(event)" class="formproject">
+                <div class="containerform">
+                    <div class="containerprojectdata">
+                        <label for="projectname">Project Name</label>
+                        <input type="text" id="projectname">
+                    </div>
+                    <div class="containerprojectdata" style="flex-direction: row;">
+                        <div class="minicontainerdate">
+                            <label for="firstdate">Start Date</label>
+                            <input type="date" id="firstdate">
+                        </div>
+                        <div class="minicontainerdate">
+                            <label for="enddate">End Date</label>
+                            <input type="date" id="enddate">
+                        </div>
+                    </div>
+                    <div class="containerprojectdata">
+                        <label for="description">Description</label>
+                        <textarea name="" id="description"></textarea>
+                    </div>
+                    <div class="containerprojectdata">
+                        <label for="nodejs">Technologies</label>
+                        <div style="display: flex; gap: 15px;">
+                            <div class="checkbox">
+                                <div class="minicheckbox">
+                                    <input type="checkbox" id="nodejs" value="true">
+                                    <label for="nodejs"> Node Js</label>
+                                </div>
+                                <div class="minicheckbox">
+                                    <input type="checkbox" id="reactjs" value="true">
+                                    <label for="reactjs">React Js</label>
+                                </div>
+                            </div>
+                            <div class="checkbox">
+                                <div class="minicheckbox">
+                                    <input type="checkbox" id="nextjs" value="true">
+                                    <label for="nextjs">Next Js</label>
+                                </div>
+                                <div class="minicheckbox" value="true">
+                                    <input type="checkbox" id="typescript">
+                                    <label for="typescript">TypeScript</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="containerprojectdata">
+                        <label for="uploadimage">Upload Image</label>
+                        <div class="minicontaineruploadimage">
+                            <div>
+                                <input type="file" id="uploadimage">
+                            </div>
+                            <i class="fa-solid fa-paperclip" style="justify-content: end;"></i>
+                        </div>
+                    </div>
+                </div>
+                <div style="float: right; margin-top: 20px;">
+                    <button class="btnproject">Sumbit</button>
+                </div>
+        </div>
+        </form>
+    </div>
+    </div>
+    <hr>
+    <div>
+        <h1 style="text-align: center;">MY PROJECT</h1>
+    </div>
+    <div id="content"></div>
+    <script src="./renderblog.js"></script>
+    <script src="navigasiphone.js"></script>
+</body>
+
+</html>
