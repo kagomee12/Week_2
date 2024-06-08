@@ -161,12 +161,6 @@ button:hover {
     margin-top: -50px;
 }
 
-#tanda_pengenal {
-    background-color: gainsboro;
-    width: 250px;
-    border: medium;
-    height: max-content;
-}
 
 .titlemyproject {
     text-align: center;
@@ -429,9 +423,11 @@ justify-content: space-between;/*untuk masing2 objek dempet kiri kanan margin*/
     font-size: 12pt;
     width: 100%;
 }
-.containerhutao{
+.continerhutao{
     width: 39.9%; 
     padding: auto;
+    margin: auto;
+
 }
 .divham {
     display: none;
@@ -443,7 +439,12 @@ justify-content: space-between;/*untuk masing2 objek dempet kiri kanan margin*/
     background-color: rgb(92, 92, 92); 
     background-size: cover; 
     width: max-content;
+    width: 80%;
     padding: auto;
+    margin-left: auto;
+    margin-right: auto;
+
+
 }
 .downcv{
     width: 100%;
@@ -451,6 +452,12 @@ justify-content: space-between;/*untuk masing2 objek dempet kiri kanan margin*/
 }
 .gambarhutao{
     width: 180pt;
+}
+#tanda_pengenal{
+    width: 100%; 
+    margin-top: -22px; 
+    margin-right: auto; 
+    margin-left: auto;
 }
 #containertestimonial {
     width: 100%;
@@ -574,14 +581,14 @@ justify-content: space-between;/*untuk masing2 objek dempet kiri kanan margin*/
         display: flex;
     }
     .gambarhutao{
-        width: 40%;
+        width: 100%;
         height: auto;
         display: block;
 
     }
     .biodatagambar{
         width: 100%;
-        background-color: white;
+        background-color: gray;
     }
     .containerhutao{
         width: 100%;
@@ -632,5 +639,8 @@ justify-content: space-between;/*untuk masing2 objek dempet kiri kanan margin*/
     }
     .formemail{
         width: 100%;
+    }
+    .perkenalan h1{
+        text-align: center;
     }
 }
