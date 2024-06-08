@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <div class="containernav" style="width: 100%;">
+            <ul class="navitem">
+                <li class="navigasi_item"><img src="./logo/sticker_10.webp" alt="" height="50px"></li>
+                <li class="navigasi_item"><a href="./index.html" style="text-decoration: none;"
+                        class="navigasi_item_1">Home</a>
+                </li>
+                <li class="navigasi_item"><a href="./myproject.html" style="text-decoration: none;"
+                        class="navigasi_item_1">My
+                        Project</a></li>
+                        <li class="navigasi_item"><a href="./testimoniak.html" class="navigasi_item_1">Testimonials</a></li>
+            </ul>
+        </div>
+        <div class="btn-contatme">
+            <a href="contact_me.html" class="btncontact">Contact Me</a>
+        </div>
+        <div class="divham">
+            <div class="conatinernavphone">
+                <ul class="navphone">
+                    <li class="navigasi_item_phone"><img src="./logo/sticker_10.webp" alt=""></li>
+                </ul>
+            </div>
+            <div class="conatinernavphone">
+                <ul class="navphone">
+                    <div style="text-align: end; justify-content: right; width: 100%;"><li><a href="" onclick="buttonham(event)"><i class="fa-solid fa-bars" style="color: black;"></i></a></li></div>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="menuphonebar">
+    </div>
+    <div style="width: 100%; height: 720px; display: flex;flex-direction: column;
+    align-items: center;">
+    <h1 style="text-align: center;">GET IN TOUCH</h1>
+    <form class="formemail" style="display: flex;">
+        <label for="nama">Nama</label>
+        <input type="text" id="nama" class="colorborder" required>
+
+        <label for="mail">E-mail</label>
+        <input type="email" id="mail" required>
+
+        <label for="phonenumber">Phone Number</label>
+        <input type="text" id="phonenumber" required>
+
+        <label for="profesi">Subject</label>
+        <select class="input-contact" style="border-radius: 15px;height: 25px;" id="profesi" required>
+                <option value="value1"> </option>
+                <option>frontend Developer</option>
+                <option>Backend Developer</option>
+                <option>Fullstack Developer</option>
+        </select>
+        <label for="isipesan">Your Message</label>
+            <textarea class="input-contact" id="isipesan" required></textarea>
+            <span><input type="button" value="submit" class="submit-contact" onclick="submitContact()" id="btnemail"></span>
+    </form>
+</div>
+<script src="./submissionmail.js"></script>
+<script src="navigasiphone.js"></script>
+</body>
+</html>
