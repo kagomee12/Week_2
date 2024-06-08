@@ -458,6 +458,7 @@ justify-content: space-between;/*untuk masing2 objek dempet kiri kanan margin*/
 .gambarhutao{
     width: 180pt;
 }
+
 @media only screen and (max-width: 750px) {
     .navigasi_item_phone img{
         width: 15%;
